@@ -10,7 +10,6 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
-		<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,300italic" rel="stylesheet" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
@@ -18,6 +17,7 @@
 		<script src="js/jquery.poptrox.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="js/jquery.flip.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -50,9 +50,7 @@
 				</header>
 				<div class="row">
 					<div class="col-md-offset-2 col-md-8">
-						<p>Pengertian gratifikasi terdapat pada Penjelasan Pasal 12B Ayat (1)
-						Undang-Undang Nomor 31 Tahun 1999 juncto Undang-Undang
-						Nomor 20 Tahun 2001, bahwa:
+						<p>Pengertian gratifikasi terdapat pada Penjelasan Pasal 12B Ayat (1) Undang-Undang Nomor 31 Tahun 1999 juncto Undang-Undang Nomor 20 Tahun 2001, bahwa:
 						</p>
 						<blockquote>
 						<p>“Yang dimaksud dengan ”gratifikasi” dalam ayat ini adalah pemberian
@@ -73,16 +71,17 @@
 
 		<!-- Feature 2 -->
 			<article class="container box style1 left">
-			<img src="images/pic02.jpg" alt="" /></a>
-				<div class="inner">
-					<header>
-						<h2>Mollis posuere<br />
-						lectus lacus</h2>
-					</header>
-					<p>Rhoncus mattis egestas sed fusce sodales rutrum et etiam ullamcorper. Etiam egestas scelerisque ac duis magna lorem ipsum dolor.</p>
-				</div>
+					<div id="card" class="image">
+						<div class="front"><img src="images/bg.jpg" alt="" /></div>
+						<div class="back"><h2>Tidak, itu bukan gratifikasi</h2><p>Pemberian hadiah oleh kantor kepada pegawai atas prestasi kerja pegawai bersangkutan tersebut didasarkan pada peraturan internal instansi yang berlaku umum bagi pegawai di instansi tersebut, maka pemberian tersebut tidak termasuk kategori gratifikasi.</p></div>
+					</div>
+					<div id="first" class="inner">
+						<header>
+							<h2>Hadiah karena Prestasi</h2>
+						</header>
+						<p>X adalah Pegawai yang berprestasi di kantornya, tugas-tugasnya selalu dapat dikerjakan dengan baik dan tepat waktu. Sebagai bentuk penghargaan pada karyawan terhadap prestasi kerja, Biro SDM mengadakan pemilihan karyawan terbaik yang diadakan setiap bulannya. Untuk bulan ini X terpilih sebagai karyawan terbaik dan diberikan hadiah dari kantornya.</p>
+					</div>
 			</article>
-								
 		<section id="footer">
 			<ul class="icons">
 				<li><a href="https://www.twitter.com/tegarnization" class="fa fa-twitter solo"><span>Twitter</span></a></li>
@@ -99,6 +98,10 @@
 				</ul>
 			</div>
 		</section>
-
+		<script>
+		$( document ).ready(function() {
+			$("#card").flip();
+		});
+		</script>
 	</body>
 </html>
