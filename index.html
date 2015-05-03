@@ -25,7 +25,16 @@
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
-
+		<div id="loading">
+			<div id="loading-center">
+			<div id="loading-center-absolute">
+			<div class="object" id="first_object"></div>
+			<div class="object" id="second_object"></div>
+			<div class="object" id="third_object"></div>
+			<div class="object" id="forth_object"></div>
+			</div>
+			</div> 
+		</div>
 		<!-- Header -->
 			<section id="header" style="padding:10px 0px">
 				<div class="row">
@@ -131,6 +140,9 @@
 			</div>
 		</section>
 		<script>
+		$(window).load(function() {
+		   $("#loading").fadeOut(3000);
+		})
 		$( document ).ready(function() {
 			$(".card").flip({
 				trigger:'manual'
