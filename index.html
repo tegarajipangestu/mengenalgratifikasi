@@ -141,7 +141,9 @@
 		</section>
 		<script>
 		$(window).load(function() {
-		   $("#loading").fadeOut(5000);
+			$("#loading-center").click(function() {
+			$("#loading").fadeOut(500);
+			})
 		})
 		$( document ).ready(function() {
 			$(".card").flip({
