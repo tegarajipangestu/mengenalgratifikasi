@@ -1195,6 +1195,10 @@
 				margin-bottom: -33px;
 				background: url('images/arrow.svg') no-repeat;
 			}
+			.logo
+			{
+				background: url(images/nogift.png);
+			}
 	
 /*********************************************************************************/
 /* Banner                                                                        */
