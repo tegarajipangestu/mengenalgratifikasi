@@ -1197,7 +1197,7 @@
 			}
 			.logo
 			{
-				background: url(images/nogift.png);
+				background: url('images/nogift.png') no-repeat;
 			}
 	
 /*********************************************************************************/
