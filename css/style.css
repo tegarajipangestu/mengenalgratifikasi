@@ -492,6 +492,7 @@
 		
 			.button.style2
 			{
+				text-decoration: none;
 				color: #3a3939;
 				background: #fff;
 				box-shadow: inset 0 0 0 1px #fff;
@@ -510,14 +511,29 @@
 				
 			.button.style3
 			{
-				background: none;
-				color: #3a3939;
+				text-decoration: none;
+				background: #EE1C25;
+				color: #FFFFFF;
 				box-shadow: inset 0 0 0 1px #dad9d9;
 			}
 			
 				.button.style3:hover
 				{
 					background: rgba(58,57,57,0.025);
+					color: #EE1C25;
+				}
+			.button.style3.tutupcaritau
+			{
+				text-decoration: none;
+				color: #EE1C25;
+				background: #FFFFFF;
+				box-shadow: inset 0 0 0 1px #dad9d9;
+			}
+			
+				.button.style3:hover.tutupcaritau
+				{
+					background: rgba(58,57,57,0.025);
+					color: #FFFFFF;
 				}
 
 	/* Box */

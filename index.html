@@ -71,16 +71,23 @@
 
 		<!-- Feature 2 -->
 			<article class="container box style1 left">
-					<div id="card" class="image">
-						<div class="front"><img src="images/bg.jpg" alt="" /></div>
-						<div class="back"><h2>Tidak, itu bukan gratifikasi</h2><p>Pemberian hadiah oleh kantor kepada pegawai atas prestasi kerja pegawai bersangkutan tersebut didasarkan pada peraturan internal instansi yang berlaku umum bagi pegawai di instansi tersebut, maka pemberian tersebut tidak termasuk kategori gratifikasi.</p></div>
+				<div id="card" class="image">
+					<div class="front"><img src="images/bg.jpg" alt="" /></div>
+					<div class="back"><h2>Tidak, itu bukan gratifikasi</h2><p>Pemberian hadiah oleh kantor kepada pegawai atas prestasi kerja pegawai bersangkutan tersebut didasarkan pada peraturan internal instansi yang berlaku umum bagi pegawai di instansi tersebut, maka pemberian tersebut tidak termasuk kategori gratifikasi.</p>
+					<footer>
+						<a class="button style3 scrolly tutupcaritau">Cari tahu!</a>
+					</footer>
 					</div>
-					<div id="first" class="inner">
-						<header>
-							<h2>Hadiah karena Prestasi</h2>
-						</header>
-						<p>X adalah Pegawai yang berprestasi di kantornya, tugas-tugasnya selalu dapat dikerjakan dengan baik dan tepat waktu. Sebagai bentuk penghargaan pada karyawan terhadap prestasi kerja, Biro SDM mengadakan pemilihan karyawan terbaik yang diadakan setiap bulannya. Untuk bulan ini X terpilih sebagai karyawan terbaik dan diberikan hadiah dari kantornya.</p>
-					</div>
+				</div>
+				<div id="first" class="inner">
+					<header>
+						<h2>Hadiah karena Prestasi</h2>
+					</header>
+					<p>X adalah Pegawai yang berprestasi di kantornya, tugas-tugasnya selalu dapat dikerjakan dengan baik dan tepat waktu. Sebagai bentuk penghargaan pada karyawan terhadap prestasi kerja, Biro SDM mengadakan pemilihan karyawan terbaik yang diadakan setiap bulannya. Untuk bulan ini X terpilih sebagai karyawan terbaik dan diberikan hadiah dari kantornya.</p>
+				</div>
+				<footer>
+					<a href="#second" class="button style3 scrolly caritau">Cari tahu!</a>
+				</footer>
 			</article>
 		<section id="footer">
 			<ul class="icons">
@@ -100,8 +107,19 @@
 		</section>
 		<script>
 		$( document ).ready(function() {
-			$("#card").flip();
+			$("#card").flip({
+				trigger:'manual'
+			});
 		});
+		$(".caritau").click(function()
+			{
+				$("#card").flip(true);
+			});
+		$(".tutupcaritau").click(function()
+		{
+			$("#card").flip(false);
+		});
+
 		</script>
 	</body>
 </html>
