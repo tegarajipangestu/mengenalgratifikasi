@@ -15,7 +15,7 @@
 
 		// Parallax Background
 			useParallax: true,
-			parallaxFactor: 50,	// Lower = more intense. Higher = less intense.
+			parallaxFactor: 10,	// Lower = more intense. Higher = less intense.
 			parallaxLimit: 1680,	// Performance tweak: turns off parallax if the viewport width exceeds this value
 
 		// skelJS
