@@ -65,30 +65,55 @@
 					</div>
 				</div>
 				<footer>
-					<a href="#first" class="button style2 scrolly">Cari tahu!</a>
+					<a href="#first" class="button style2 scrolly">Cari tahu</a>
 				</footer>
 			</section>
 
 		<!-- Feature 2 -->
-			<article class="container box style1 left">
-				<div id="card" class="image">
-					<div class="front"><img src="images/bg.jpg" alt="" /></div>
-					<div class="back"><h2>Tidak, itu bukan gratifikasi</h2><p>Pemberian hadiah oleh kantor kepada pegawai atas prestasi kerja pegawai bersangkutan tersebut didasarkan pada peraturan internal instansi yang berlaku umum bagi pegawai di instansi tersebut, maka pemberian tersebut tidak termasuk kategori gratifikasi.</p>
-					<footer>
-						<a class="button style3 scrolly tutupcaritau">Cari tahu!</a>
-					</footer>
-					</div>
-				</div>
-				<div id="first" class="inner">
-					<header>
-						<h2>Hadiah karena Prestasi</h2>
-					</header>
-					<p>X adalah Pegawai yang berprestasi di kantornya, tugas-tugasnya selalu dapat dikerjakan dengan baik dan tepat waktu. Sebagai bentuk penghargaan pada karyawan terhadap prestasi kerja, Biro SDM mengadakan pemilihan karyawan terbaik yang diadakan setiap bulannya. Untuk bulan ini X terpilih sebagai karyawan terbaik dan diberikan hadiah dari kantornya.</p>
-				</div>
+		<article class="container box style1 left">
+			<div class="image card">
+				<div class="front"><img src="images/bg.jpg" alt="" /></div>
+				<div class="back"><h2>Tidak, itu bukan gratifikasi</h2><p>Pemberian hadiah oleh kantor kepada pegawai atas prestasi kerja pegawai bersangkutan tersebut didasarkan pada peraturan internal instansi yang berlaku umum bagi pegawai di instansi tersebut, maka pemberian tersebut tidak termasuk kategori gratifikasi.</p>
 				<footer>
-					<a href="#second" class="button style3 scrolly caritau">Cari tahu!</a>
+					<a class="button style3 scrolly tutupcaritau">Oke saya mengerti</a>
 				</footer>
-			</article>
+				</div>
+			</div>
+			<div id="first" class="inner">
+				<header>
+					<h2>Hadiah karena Prestasi</h2>
+				</header>
+				<p>Yanfa adalah Pegawai yang berprestasi di kantornya, tugas-tugasnya selalu dapat dikerjakan dengan baik dan tepat waktu. Sebagai bentuk penghargaan pada karyawan terhadap prestasi kerja, Biro SDM mengadakan pemilihan karyawan terbaik yang diadakan setiap bulannya. Untuk bulan ini X terpilih sebagai karyawan terbaik dan diberikan hadiah dari kantornya.</p>
+			</div>
+			<footer>
+				<a href="#second" class="button style3 scrolly caritau">Apakah ini Gratifikasi?</a>
+			</footer>
+		</article>
+		<section id="footer">
+			<div class="icons"><a href="#">Kasus Selanjutnya</a></div>
+		</section>
+
+		<article class="container box style1 left">
+			<div class="image card">
+				<div class="front"><img src="images/bg.jpg" alt="" /></div>
+				<div class="back"><h2>Waspada, itu adalah gratifikasi</h2><p>Sebagai penyelenggara negara atau pegawai negeri (pegawai senior dari biro perlengkapan di sebuah Kementerian), Anda telah menerima pemberian hadiah (gratifikasi) berupa komputer dari pihak yang Anda ketahui sebagai rekanan dari Kementerian. Anda juga mengetahui bahwa Anda akan menjadi panitia pengadaan yang berhak untuk menentukan perusahaan mana yang akan dipilih oleh Kementerian untuk memberikan layanan pengadaan komputer. Pemberian komputer ini dapat dilihat sebagai upaya untuk mengurangi independensi Anda pada saat menentukan siapa pemenang tender. Karena dengan pemberian tersebut Anda akan merasa berhutang budi pada kontraktor yang telah memberikan komputer</p>
+				<footer>
+					<a class="button style3 scrolly tutupcaritau">Oke saya mengerti</a>
+				</footer>
+				</div>
+			</div>
+			<div id="second" class="inner">
+				<header>
+					<h2>Pemberian Pinjaman Barang dari Rekanan kepada Pejabat/Pegawai Negeri secara cuma-cuma</h2>
+				</header>
+				<p>Anda adalah seorang pejabat kementerian. Seorang penyedia barang dan jasa menawarkan kepada Anda sebuah komputer secara cuma-cuma untuk digunakan di rumah. Seiring dengan berjalannya waktu, kontraktor tersebut menjadi teman akrab Anda. Dengan menggunakan komputer pemberian tersebut, Anda banyak melakukan pekerjaan yang ditugaskan oleh Kementerian di rumah.</p>
+				<p>Tiga bulan lagi kontrak layanan peralatan komputer bagi Kementerian perlu diperbaharui dan Anda biasanya menjadi anggota dari kepanitiaan yang akan memutuskan perusahaan mana yang memenangkan kontrak tersebut.</p>
+			</div>
+			<footer>
+				<a class="button style3 scrolly caritau">Apakah ini Gratifikasi?</a>
+			</footer>
+		</article>
+
 		<section id="footer">
 			<ul class="icons">
 				<li><a href="https://www.twitter.com/tegarnization" class="fa fa-twitter solo"><span>Twitter</span></a></li>
@@ -107,17 +132,17 @@
 		</section>
 		<script>
 		$( document ).ready(function() {
-			$("#card").flip({
+			$(".card").flip({
 				trigger:'manual'
 			});
 		});
 		$(".caritau").click(function()
 			{
-				$("#card").flip(true);
+				$(".card").flip(true);
 			});
 		$(".tutupcaritau").click(function()
 		{
-			$("#card").flip(false);
+			$(".card").flip(false);
 		});
 
 		</script>
